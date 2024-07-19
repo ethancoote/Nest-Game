@@ -21,6 +21,7 @@
     {"name":"sEggCannon","order":3,"path":"sprites/sEggCannon/sEggCannon.yy",},
     {"name":"sChar1Run","order":1,"path":"sprites/sChar1Run/sChar1Run.yy",},
     {"name":"oEggCannon","order":2,"path":"objects/oEggCannon/oEggCannon.yy",},
+    {"name":"sSparks","order":4,"path":"sprites/sSparks/sSparks.yy",},
     {"name":"tsTerrain","order":2,"path":"tilesets/tsTerrain/tsTerrain.yy",},
     {"name":"sEgg","order":2,"path":"sprites/sEgg/sEgg.yy",},
     {"name":"oEgg","order":3,"path":"objects/oEgg/oEgg.yy",},

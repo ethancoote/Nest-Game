@@ -39,6 +39,7 @@
     {"id":{"name":"sChar1Run","path":"sprites/sChar1Run/sChar1Run.yy",},},
     {"id":{"name":"oEggCannon","path":"objects/oEggCannon/oEggCannon.yy",},},
     {"id":{"name":"Terrain__32x32_","path":"sprites/Terrain__32x32_/Terrain__32x32_.yy",},},
+    {"id":{"name":"sSparks","path":"sprites/sSparks/sSparks.yy",},},
     {"id":{"name":"tsTerrain","path":"tilesets/tsTerrain/tsTerrain.yy",},},
     {"id":{"name":"sEgg","path":"sprites/sEgg/sEgg.yy",},},
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},
