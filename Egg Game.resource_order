@@ -24,6 +24,8 @@
     {"name":"sSparks","order":4,"path":"sprites/sSparks/sSparks.yy",},
     {"name":"tsTerrain","order":2,"path":"tilesets/tsTerrain/tsTerrain.yy",},
     {"name":"sEgg","order":2,"path":"sprites/sEgg/sEgg.yy",},
+    {"name":"sChicken","order":5,"path":"sprites/sChicken/sChicken.yy",},
+    {"name":"oChicken","order":4,"path":"objects/oChicken/oChicken.yy",},
     {"name":"oEgg","order":3,"path":"objects/oEgg/oEgg.yy",},
   ],
 }
