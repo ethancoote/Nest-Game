@@ -78,6 +78,16 @@ if hold == true {
 	oEggCannon.y = y - 8;
 	oEggCannon.face = face;
 	oEggCannon.image_angle = point_direction(x, y, mouse_x, mouse_y);
+	
+	// shoot egg
+	if mouse_click {
+		var _egg = instance_create_depth(x, y - 8, 1, oEgg);
+		with(_egg) {
+			egg_spd = oPlayer.attack_spd;
+			x_attack = mouse_x;
+			y_attack = mouse_y;
+		}
+	}
 }
 
 // grounded

@@ -18,6 +18,7 @@ grounded = true;
 // stats
 life = 100;
 hold = true;
+attack_spd = 5;
 hold_instance = noone;
 
 
