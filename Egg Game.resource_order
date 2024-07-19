@@ -7,7 +7,7 @@
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
-    {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Timelines","order":1,"path":"folders/Tile Sets/Timelines.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
@@ -16,5 +16,12 @@
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"sEggCannon","order":3,"path":"sprites/sEggCannon/sEggCannon.yy",},
+    {"name":"sChar1Run","order":1,"path":"sprites/sChar1Run/sChar1Run.yy",},
+    {"name":"oEggCannon","order":2,"path":"objects/oEggCannon/oEggCannon.yy",},
+    {"name":"tsTerrain","order":2,"path":"tilesets/tsTerrain/tsTerrain.yy",},
+    {"name":"sEgg","order":2,"path":"sprites/sEgg/sEgg.yy",},
+  ],
 }
