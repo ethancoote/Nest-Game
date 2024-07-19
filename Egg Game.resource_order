@@ -17,8 +17,10 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sFire","order":6,"path":"sprites/sFire/sFire.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sEggCannon","order":3,"path":"sprites/sEggCannon/sEggCannon.yy",},
+    {"name":"oFire","order":5,"path":"objects/oFire/oFire.yy",},
     {"name":"sChar1Run","order":1,"path":"sprites/sChar1Run/sChar1Run.yy",},
     {"name":"oEggCannon","order":2,"path":"objects/oEggCannon/oEggCannon.yy",},
     {"name":"sSparks","order":4,"path":"sprites/sSparks/sSparks.yy",},

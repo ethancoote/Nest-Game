@@ -34,8 +34,10 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"sFire","path":"sprites/sFire/sFire.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sEggCannon","path":"sprites/sEggCannon/sEggCannon.yy",},},
+    {"id":{"name":"oFire","path":"objects/oFire/oFire.yy",},},
     {"id":{"name":"sChar1Run","path":"sprites/sChar1Run/sChar1Run.yy",},},
     {"id":{"name":"oEggCannon","path":"objects/oEggCannon/oEggCannon.yy",},},
     {"id":{"name":"Terrain__32x32_","path":"sprites/Terrain__32x32_/Terrain__32x32_.yy",},},
