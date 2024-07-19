@@ -4,6 +4,9 @@ y_spd = 0;
 move_spd = 2;
 move_dir = 0;
 face = 1;
+accel = 0.5;
+ground_accel = 0.5;
+air_accel = 0.2;
 
 // jump
 grav = .4;
@@ -20,6 +23,17 @@ life = 100;
 hold = true;
 attack_spd = 5;
 hold_instance = noone;
+egg_cooldown = 8;
+egg_timer = 0;
+
+// shooting knockback
+knock_frames = 8;
+knock_timer = 0;
+knock_pow = 4;
+knock_x = 0;
+knock_y = 0;
+target_x = 0;
+target_y = 0;
 
 
 

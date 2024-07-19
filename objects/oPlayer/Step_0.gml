@@ -1,7 +1,32 @@
 // movement
 get_controls();
+
+//// accel
+if grounded {
+	accel = ground_accel;
+} else {
+	accel = air_accel;
+}
+
 move_dir = key_right - key_left;
-x_spd = move_dir * move_spd;
+x_spd += move_dir * accel;
+if x_spd > move_spd {
+	x_spd = move_spd;
+} else if x_spd < -move_spd {
+	x_spd = -move_spd;
+} 
+
+//// stopping
+if move_dir == 0 {
+	if x_spd <= accel && x_spd >= -accel {
+		x_spd = 0;
+	}
+	if x_spd > 0{
+		x_spd -= accel;
+	} else if x_spd < 0 {
+		x_spd += accel;
+	}
+}
 
 //// setting face
 if mouse_pos > x {
@@ -33,8 +58,15 @@ if y_spd > term_vel {
 	y_spd = term_vel;
 }
 
+// egg knockback
+if knock_timer > 0 {
+	x_spd = lengthdir_x(-knock_pow, point_direction(x, y, knock_x, knock_y));
+	y_spd = lengthdir_y(-(knock_pow*0.5), point_direction(x, y, knock_x, knock_y));
+	knock_timer--;
+}
+
 // animations
-if x_spd == move_spd || x_spd == -move_spd {
+if x_spd != 0 && grounded {
 	sprite_index = sChar1Run;
 } else {
 	sprite_index = sChar1;
@@ -50,8 +82,6 @@ if place_meeting(x, y+y_spd, tsTerrain) {
 	}
 	grounded = true;
 	y_spd = 0;
-} else {
-	
 }
 
 y += y_spd;
@@ -80,13 +110,19 @@ if hold == true {
 	oEggCannon.image_angle = point_direction(x, y, mouse_x, mouse_y);
 	
 	// shoot egg
-	if mouse_click {
+	if mouse_click && egg_timer == 0{
 		var _egg = instance_create_depth(x, y - 8, 1, oEgg);
 		with(_egg) {
 			egg_spd = oPlayer.attack_spd;
 			x_attack = mouse_x;
 			y_attack = mouse_y;
 		}
+		egg_timer = egg_cooldown;
+		knock_timer = knock_frames;
+		knock_x = mouse_x;
+		knock_y = mouse_y;
+	} else if egg_timer > 0 {
+		egg_timer--;
 	}
 }
 
