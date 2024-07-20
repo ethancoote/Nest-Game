@@ -26,10 +26,15 @@ hold_instance = noone;
 egg_cooldown = 8;
 egg_timer = 0;
 
+// gun stats
+damage = 35;
+hitstun = 30;
+knockback = 8;
+
 // shooting knockback
 knock_frames = 8;
 knock_timer = 0;
-knock_pow = 4;
+knock_pow = 1.8;
 knock_x = 0;
 knock_y = 0;
 target_x = 0;

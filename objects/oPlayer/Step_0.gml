@@ -61,7 +61,7 @@ if y_spd > term_vel {
 // egg knockback
 if knock_timer > 0 {
 	x_spd = lengthdir_x(-knock_pow, point_direction(x, y, knock_x, knock_y));
-	y_spd = lengthdir_y(-(knock_pow*0.5), point_direction(x, y, knock_x, knock_y));
+	y_spd = lengthdir_y(-(knock_pow), point_direction(x, y, knock_x, knock_y));
 	knock_timer--;
 }
 

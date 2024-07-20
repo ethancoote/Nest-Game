@@ -6,6 +6,7 @@ y_attack = 0;
 explode_timer = 0;
 explode_frames = 20;
 explode_dest = false;
+passed = false;
 
 
 
