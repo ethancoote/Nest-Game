@@ -5,8 +5,8 @@ spd = random_range(0.4, oControl1.top_spd);
 grav = 0.4;
 grounded = true;
 face = 1;
-dist_stop_left = random_range(15, 45);
-dist_stop_right = random_range(45, 75);
+dist_stop_left = random_range(15, 40);
+dist_stop_right = random_range(45, 65);
 
 // stats
 hp = 100;

@@ -1,8 +1,12 @@
 // camera controls
-var _cam_width = camera_get_view_width(view_camera[0]);
-var _cam_height = camera_get_view_height(view_camera[0]);
 
-var _cam_x = oPlayer.x - _cam_width/2;
-var _cam_y = oPlayer.y - _cam_height/2;
+cam_x = oPlayer.x - cam_width/2;
 
-camera_set_view_pos(view_camera[0], _cam_x, _cam_y -20);
+camera_set_view_pos(view_camera[0], cam_x, cam_y -20);
+
+back_spd = oPlayer.x_spd * 0.8;
+back_spd1 = oPlayer.x_spd * 0.4;
+back_spd2 = oPlayer.x_spd * -1;
+layer_hspeed(lay_id, back_spd);
+layer_hspeed(lay_id1, back_spd1);
+layer_hspeed(lay_id2, back_spd2);
