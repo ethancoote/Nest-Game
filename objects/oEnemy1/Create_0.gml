@@ -1,7 +1,7 @@
 // movement
 x_spd = 0;
 y_spd = 0;
-spd = 0.5;
+spd = random_range(0.4, oControl1.top_spd);
 grav = 0.4;
 grounded = true;
 face = 1;
