@@ -6,7 +6,8 @@ if damage_timer > 0 {
 }
 
 if hp <= 0 {
-	show_debug_message("you lose");
+	oPlayer.dead = true;
+	oLoseMenu.appear = true;
 }
 
 

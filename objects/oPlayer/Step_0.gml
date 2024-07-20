@@ -84,7 +84,9 @@ if place_meeting(x, y+y_spd, oControl1.tm1) {
 	y_spd = 0;
 }
 
-y += y_spd;
+if dead == false {
+	y += y_spd;
+}
 
 // x collision
 if place_meeting(x + x_spd, y, oControl1.tm1) {
@@ -97,10 +99,13 @@ if place_meeting(x + x_spd, y, oControl1.tm1) {
 	x_spd = 0;
 }
 
-x += x_spd;
+if dead == false {
+	x += x_spd;
+}
+
 
 // hold
-if hold == true {
+if hold == true && dead == false{
 	if hold_instance == noone {
 		hold_instance = instance_create_depth(x, y, -1, oEggCannon);
 	}
@@ -150,14 +155,17 @@ if (y_spd >= 0 && place_meeting(x, y+1, oControl1.tm1)) {
 	grounded = false;
 }
 
-// death
 if hp <= 0 {
-	show_debug_message("you lose");
+	dead = true;
+	oLoseMenu.appear = true;
 }
 
 // health bar
 // health bar
 hp_bar.image_xscale = hp/100;
+if hp_bar.image_xscale < 0 {
+	hp_bar.image_xscale = 0;
+}
 hp_back.x = x+hp_x_pos;
 hp_back.y = y+hp_y_pos;
 hp_bar.x = x+hp_x_pos;

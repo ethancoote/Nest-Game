@@ -44,6 +44,7 @@ target_y = 0;
 take_damage_frames = 120;
 take_damage_timer = 0;
 blank_timer = 0;
+dead = false;
 
 // health bar
 hp_x_pos = - 5;
