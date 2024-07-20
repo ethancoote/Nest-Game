@@ -39,10 +39,12 @@ if _egg_instance != noone && damage_timer == 0 {
 if hitstun_timer > 0 {
 	x_spd = 0;
 	hitstun_timer--;
+	sprite_index = sEnemy1Stand;
 }
 
 if damage_timer > 0 {
 	damage_timer--;
+	sprite_index = sEnemy1Hurt;
 }
 
 // y collision
