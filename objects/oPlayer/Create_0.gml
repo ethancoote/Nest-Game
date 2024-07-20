@@ -45,5 +45,11 @@ take_damage_frames = 120;
 take_damage_timer = 0;
 blank_timer = 0;
 
+// health bar
+hp_x_pos = - 5;
+hp_y_pos = - 25;
+hp_back = instance_create_depth(x + hp_x_pos, y + hp_y_pos, 0, oHealthBack);
+hp_bar = instance_create_depth(x + hp_x_pos, y + hp_y_pos, -1, oHealthPlayer);
+
 
 

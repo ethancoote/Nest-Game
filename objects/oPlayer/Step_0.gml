@@ -155,6 +155,14 @@ if hp <= 0 {
 	show_debug_message("you lose");
 }
 
+// health bar
+// health bar
+hp_bar.image_xscale = hp/100;
+hp_back.x = x+hp_x_pos;
+hp_back.y = y+hp_y_pos;
+hp_bar.x = x+hp_x_pos;
+hp_bar.y = y+hp_y_pos;
+
 
 
 
