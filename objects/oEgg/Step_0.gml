@@ -5,6 +5,7 @@ if destroy_timer > 0 {
 	instance_destroy();
 } 
 
+// explode on hit
 if ((place_meeting(x, y, tsTerrain) && explode_dest = false)) 
 	|| (place_meeting(x, y, oEnemy1) && explode_dest = false) {
 	explode_timer = explode_frames;
@@ -14,6 +15,13 @@ if ((place_meeting(x, y, tsTerrain) && explode_dest = false))
 	image_xscale = 0.5;
 	image_yscale = 0.5;
 	speed = 0;
+	
+	//face
+	if oPlayer.x < x {
+		face = -1;
+	} else {
+		face = 1;
+	}
 }
 
 if explode_timer > 0 {

@@ -10,18 +10,25 @@ if x < oChicken.x {
 // stop and attack
 if (abs(x - oChicken.x) < dist_stop_left && face == 1) || (abs(x - oChicken.x) < dist_stop_right && face == -1){
 	x_spd = 0;
-	// attack
+	attack = true;
+} else {
+	attack = false;
+}
+
+// attack
+if attack == true {
+	if attack_timer > 0 {
+		attack_timer--;
+	} else {
+		attack_timer = attack_frames;
+		oChicken.hp -= damage;
+		oChicken.damage_timer = oChicken.damage_frames;
+	}
 }
 
 // gravity
 if grounded == false {
 	y_spd += grav;
-}
-
-// death 
-if hp <= 0 {
-	instance_destroy();
-	// add death animation
 }
 
 // got hit
@@ -40,6 +47,8 @@ if hitstun_timer > 0 {
 	x_spd = 0;
 	hitstun_timer--;
 	sprite_index = sEnemy1Stand;
+} else {
+	sprite_index = sEnemy1;
 }
 
 if damage_timer > 0 {
@@ -75,5 +84,20 @@ if place_meeting(x + x_spd, y, tsTerrain) {
 }
 
 x += x_spd;
+
+// health bar
+hp_bar.image_xscale = hp/100;
+hp_back.x = x+hp_x_pos;
+hp_back.y = y+hp_y_pos;
+hp_bar.x = x+hp_x_pos;
+hp_bar.y = y+hp_y_pos;
+
+// death 
+if hp <= 0 {
+	instance_destroy(hp_back);
+	instance_destroy(hp_bar);
+	instance_destroy();
+	// add death animation
+}
 
 

@@ -19,7 +19,7 @@ jump_buff_timer = 0;
 grounded = true;
 
 // stats
-life = 100;
+hp = 100;
 hold = true;
 attack_spd = 5;
 hold_instance = noone;
@@ -40,6 +40,10 @@ knock_y = 0;
 target_x = 0;
 target_y = 0;
 
+// misc
+take_damage_frames = 120;
+take_damage_timer = 0;
+blank_timer = 0;
 
 
 

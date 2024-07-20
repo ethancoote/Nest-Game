@@ -126,11 +126,33 @@ if hold == true {
 	}
 }
 
+// got hit
+if place_meeting(x, y, oEnemy1) && take_damage_timer == 0{
+	take_damage_timer = take_damage_frames;
+	hp -= 20;
+}
+
+image_alpha = 1;
+if take_damage_timer > 0 {
+	take_damage_timer--;
+	if take_damage_timer%20 == 0 {
+		blank_timer = 10;
+	} else if blank_timer > 0 {
+		image_alpha = 0;
+		blank_timer--;
+	}
+}
+
 // grounded
 if (y_spd >= 0 && place_meeting(x, y+1, tsTerrain)) {
 	grounded = true;
 } else {
 	grounded = false;
+}
+
+// death
+if hp <= 0 {
+	show_debug_message("you lose");
 }
 
 
