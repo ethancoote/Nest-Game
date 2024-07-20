@@ -58,10 +58,10 @@ if damage_timer > 0 {
 
 // y collision
 var _sub_pixel = .5;
-if place_meeting(x, y+y_spd, tsTerrain) {
+if place_meeting(x, y+y_spd, oControl1.tm1) {
 	var _pixel_check = _sub_pixel * sign(y_spd);
 	
-	while !place_meeting(x, y + _pixel_check, tsTerrain) {
+	while !place_meeting(x, y + _pixel_check, oControl1.tm1) {
 		y += _pixel_check;
 	}
 	y_spd = 0;
@@ -73,10 +73,10 @@ if place_meeting(x, y+y_spd, tsTerrain) {
 y += y_spd;
 
 // x collision
-if place_meeting(x + x_spd, y, tsTerrain) {
+if place_meeting(x + x_spd, y, oControl1.tm1) {
 	var _pixel_check = _sub_pixel * sign(x_spd);
 	
-	while !place_meeting(x + _pixel_check, y, tsTerrain) {
+	while !place_meeting(x + _pixel_check, y, oControl1.tm1) {
 		x += _pixel_check;
 	}
 	
