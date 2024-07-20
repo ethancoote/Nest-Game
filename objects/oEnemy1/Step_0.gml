@@ -93,7 +93,8 @@ hp_bar.x = x+hp_x_pos;
 hp_bar.y = y+hp_y_pos;
 
 // death 
-if hp <= 0 {
+if hp <= 0 || oControl1.win == true{
+	oControl1.enemies_killed += 1;
 	instance_destroy(hp_back);
 	instance_destroy(hp_bar);
 	instance_destroy();
