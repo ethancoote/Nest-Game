@@ -18,9 +18,9 @@ if ((place_meeting(x, y, tsTerrain) && explode_dest = false))
 	
 	//face
 	if oPlayer.x < x {
-		face = -1;
+		image_xscale = -0.5;
 	} else {
-		face = 1;
+		image_xscale = 0.5;
 	}
 }
 
