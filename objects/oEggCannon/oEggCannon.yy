@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sEggCannon",
-    "path": "sprites/sEggCannon/sEggCannon.yy",
+    "name": "sEggCannonArm",
+    "path": "sprites/sEggCannonArm/sEggCannonArm.yy",
   },
   "spriteMaskId": null,
   "visible": true,

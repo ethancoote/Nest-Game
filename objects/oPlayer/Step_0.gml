@@ -69,7 +69,7 @@ if knock_timer > 0 {
 if x_spd != 0 && grounded {
 	sprite_index = sChar1Run;
 } else {
-	sprite_index = sChar1;
+	sprite_index = sChar2;
 }
 
 // y collision
@@ -110,7 +110,7 @@ if hold == true && dead == false{
 		hold_instance = instance_create_depth(x, y, -1, oEggCannon);
 	}
 	oEggCannon.x = x;
-	oEggCannon.y = y - 7;
+	oEggCannon.y = y - 5;
 	oEggCannon.face = face;
 	oEggCannon.image_angle = point_direction(x, y, mouse_x, mouse_y);
 	
