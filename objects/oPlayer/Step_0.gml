@@ -116,7 +116,7 @@ if hold == true && dead == false{
 	
 	// shoot egg
 	if mouse_click && egg_timer == 0{
-		var _egg = instance_create_depth(x, y - 7, 1, oEgg);
+		var _egg = instance_create_depth(x, y - 4, 1, oEgg);
 		with(_egg) {
 			egg_spd = oPlayer.attack_spd;
 			x_attack = mouse_x;
