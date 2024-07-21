@@ -8,6 +8,9 @@ explode_frames = 20;
 explode_dest = false;
 passed = false;
 
+audio_emitter = audio_emitter_create();
+audio_falloff_set_model(audio_falloff_exponent_distance);
+
 
 
 

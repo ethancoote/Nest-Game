@@ -1,9 +1,10 @@
 // camera controls
-
 cam_x = oPlayer.x - cam_width/2;
 
 camera_set_view_pos(view_camera[0], cam_x, cam_y -20);
 
+
+// background paralaxing
 back_spd = oPlayer.x_spd * 0.8;
 back_spd1 = oPlayer.x_spd * 0.4;
 back_spd2 = oPlayer.x_spd * -1;

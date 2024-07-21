@@ -1,3 +1,10 @@
+// random pitching
+var _pitch = random_range(0.85, 1.15);
+var _low_pitch = random_range(0.5, 0.8);
+
+// audio listener
+audio_listener_position(x, y, 0);
+
 // movement
 get_controls();
 
@@ -68,7 +75,14 @@ if knock_timer > 0 {
 // animations
 if x_spd != 0 && grounded {
 	sprite_index = sChar1Run;
+	if walk_snd_reset == 0 && oLoseMenu.appear == false {
+		audio_play_sound(walk1, 0, false, 1, 0, _low_pitch);
+		walk_snd_reset = 20
+	}
+	walk_snd_reset--;
 } else {
+	audio_stop_sound(walk1);
+	walk_snd_reset = 0;
 	sprite_index = sChar2;
 }
 
@@ -115,7 +129,8 @@ if hold == true && dead == false{
 	oEggCannon.image_angle = point_direction(x, y, mouse_x, mouse_y);
 	
 	// shoot egg
-	if mouse_click && egg_timer == 0{
+	if mouse_click && egg_timer == 0 {
+		audio_play_sound(pop2, 0, false, 1, 0, _pitch);
 		var _egg = instance_create_depth(x, y - 4, 1, oEgg);
 		with(_egg) {
 			egg_spd = oPlayer.attack_spd;
@@ -132,9 +147,11 @@ if hold == true && dead == false{
 }
 
 // got hit
-if place_meeting(x, y, oEnemy1) && take_damage_timer == 0{
+if place_meeting(x, y, oEnemy1) && take_damage_timer == 0 && hp > 0{
 	take_damage_timer = take_damage_frames;
 	hp -= 20;
+	audio_play_sound(splat1, 0, false, 0.7, 0, 1.5);
+	audio_play_sound(grunt1, 0, false);
 }
 
 image_alpha = 1;
@@ -161,15 +178,29 @@ if hp <= 0 {
 }
 
 // health bar
-// health bar
 hp_bar.image_xscale = hp/100;
 if hp_bar.image_xscale < 0 {
 	hp_bar.image_xscale = 0;
 }
+
 hp_back.x = x+hp_x_pos;
 hp_back.y = y+hp_y_pos;
 hp_bar.x = x+hp_x_pos;
 hp_bar.y = y+hp_y_pos;
+
+// win sound
+if oControl1.just_won == true {
+	oControl1.just_won = false;
+	audio_play_sound(win2, 0, false, 1);
+}
+
+// lose sound
+if oLoseMenu.appear == true and lose == false{
+	lose = true;
+	audio_play_sound(lose1, 0, false, 1);
+}
+
+
 
 
 

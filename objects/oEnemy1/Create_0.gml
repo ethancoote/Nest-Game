@@ -27,5 +27,7 @@ hp_y_pos = - random_range(15, 20);
 hp_back = instance_create_depth(x + hp_x_pos, y + hp_y_pos, 0, oHealthBack);
 hp_bar = instance_create_depth(x + hp_x_pos, y + hp_y_pos, -1, oHealthEnemy);
 
-
+// audio
+audio_emitter = audio_emitter_create();
+audio_falloff_set_model(audio_falloff_exponent_distance);
 

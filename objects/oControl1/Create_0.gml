@@ -13,6 +13,7 @@ top_spd = 0.6 + (wave/5);
 // game state
 win = false;
 play = false;
+just_won = false;
 
 
 

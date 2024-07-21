@@ -45,6 +45,8 @@ take_damage_frames = 120;
 take_damage_timer = 0;
 blank_timer = 0;
 dead = false;
+lose = false;
+walk_snd_reset = 0;
 
 // health bar
 hp_x_pos = - 5;

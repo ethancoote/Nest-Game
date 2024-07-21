@@ -1,3 +1,7 @@
+// random pitching
+var _pitch = random_range(0.7, 1);
+audio_emitter_position(audio_emitter, x, y, 0);
+
 // destory timer
 if destroy_timer > 0 {
 	destroy_timer--;
@@ -15,7 +19,7 @@ if ((place_meeting(x, y, tsTerrain) && explode_dest = false))
 	image_xscale = 0.5;
 	image_yscale = 0.5;
 	speed = 0;
-	
+	audio_play_sound_at(splat1, x, y, 0, 100, 300, 1, false, 0, 0.5, 0, _pitch);
 	//face
 	if oPlayer.x < x {
 		image_xscale = -0.5;

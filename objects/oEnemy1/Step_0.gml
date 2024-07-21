@@ -1,3 +1,6 @@
+// randam pitch
+var _pitch = random_range(0.7, 1.1);
+
 // move towards chicken
 if x < oChicken.x {
 	x_spd = spd;
@@ -95,6 +98,8 @@ hp_bar.y = y+hp_y_pos;
 // death 
 if hp <= 0 || oControl1.win == true{
 	oControl1.enemies_killed += 1;
+	
+	audio_play_sound_at(grunt2, x, y, 0, 200, 50, 10, false, 0, 0.6, 0, _pitch);
 	instance_destroy(hp_back);
 	instance_destroy(hp_bar);
 	instance_destroy();

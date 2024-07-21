@@ -1,6 +1,9 @@
 // wave end
 if enemies_killed == wave_enemies[wave] {
-	play = false;
+	if wave > 0 && play == true {
+		just_won = true;
+	}
+	play = false;	
 } else {
 	play = true;
 }

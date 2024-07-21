@@ -8,6 +8,7 @@ if oLoseMenu.appear == true || oWinMenu.appear == true {
 	if _inst == true {
 		sprite_index = sMainMenuHover;
 		if mouse_check_button_pressed(mb_left) {
+			audio_play_sound(pop2, 0, false, 1);
 			room_goto(0);
 		}
 	} else {
