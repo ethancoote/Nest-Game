@@ -1,5 +1,11 @@
 if appear == true {
-	image_alpha = 1;
+	if y < 360 {
+		y += 20;
+	} 
+} else {
+	if y > -200 {
+		y -= 20;
+	}
 }
 
 

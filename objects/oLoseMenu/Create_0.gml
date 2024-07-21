@@ -1,8 +1,6 @@
 appear = false;
 
 x = 480;
-y = 360;
-
-image_alpha = 0;
+y = -200;
 
 

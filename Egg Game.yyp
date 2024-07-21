@@ -87,6 +87,7 @@
     {"id":{"name":"sS","path":"sprites/sS/sS.yy",},},
     {"id":{"name":"sHealthChicken","path":"sprites/sHealthChicken/sHealthChicken.yy",},},
     {"id":{"name":"sNest","path":"sprites/sNest/sNest.yy",},},
+    {"id":{"name":"sLighting","path":"sprites/sLighting/sLighting.yy",},},
     {"id":{"name":"sHealthBack","path":"sprites/sHealthBack/sHealthBack.yy",},},
     {"id":{"name":"sHealthEnemy","path":"sprites/sHealthEnemy/sHealthEnemy.yy",},},
     {"id":{"name":"oChickenHealthBack","path":"objects/oChickenHealthBack/oChickenHealthBack.yy",},},

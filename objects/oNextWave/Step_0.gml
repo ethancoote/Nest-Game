@@ -11,6 +11,7 @@ if oControl1.play == false && oControl1.win == false {
 			oControl1.wave += 1;
 			oControl1.play = true;
 			oControl1.enemies_killed = 0;
+			oControl1.enemies_spawned = 0;
 		}
 	} else {
 		sprite_index = sNextWave;

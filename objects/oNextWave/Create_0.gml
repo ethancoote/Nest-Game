@@ -1,6 +1,6 @@
 
 x = 480;
-y = 500;
+y = 1000;
 image_xscale = image_xscale * 4;
 image_yscale = image_yscale * 4;
 

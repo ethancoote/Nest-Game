@@ -1,5 +1,7 @@
 if oLoseMenu.appear == true || oWinMenu.appear == true {
-	image_alpha = 1;
+	if y < 300 {
+		y += 20;
+	} 
 	var _inst;
 	_inst = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), id);
 
@@ -10,6 +12,10 @@ if oLoseMenu.appear == true || oWinMenu.appear == true {
 		}
 	} else {
 		sprite_index = sMainMenu;
+	}
+} else {
+	if y > -200 {
+		y -= 20;
 	}
 }
 
