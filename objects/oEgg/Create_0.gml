@@ -1,5 +1,5 @@
 // stats
-destroy_timer = 180;
+destroy_timer = 30;
 egg_spd = 0;
 x_attack = 0;
 y_attack = 0;

@@ -42,6 +42,7 @@
   },
   "resources": [
     {"id":{"name":"sPlayHover","path":"sprites/sPlayHover/sPlayHover.yy",},},
+    {"id":{"name":"menuSong1","path":"sounds/menuSong1/menuSong1.yy",},},
     {"id":{"name":"sFire","path":"sprites/sFire/sFire.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sLoseMenu","path":"sprites/sLoseMenu/sLoseMenu.yy",},},
@@ -70,6 +71,7 @@
     {"id":{"name":"pop2","path":"sounds/pop2/pop2.yy",},},
     {"id":{"name":"oHealthPlayer","path":"objects/oHealthPlayer/oHealthPlayer.yy",},},
     {"id":{"name":"sMainMenu","path":"sprites/sMainMenu/sMainMenu.yy",},},
+    {"id":{"name":"fightSong1","path":"sounds/fightSong1/fightSong1.yy",},},
     {"id":{"name":"oSpawner1","path":"objects/oSpawner1/oSpawner1.yy",},},
     {"id":{"name":"sNextWave","path":"sprites/sNextWave/sNextWave.yy",},},
     {"id":{"name":"oLoseMenu","path":"objects/oLoseMenu/oLoseMenu.yy",},},
@@ -91,6 +93,7 @@
     {"id":{"name":"win2","path":"sounds/win2/win2.yy",},},
     {"id":{"name":"oNest","path":"objects/oNest/oNest.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
+    {"id":{"name":"menuSong2","path":"sounds/menuSong2/menuSong2.yy",},},
     {"id":{"name":"sChicken","path":"sprites/sChicken/sChicken.yy",},},
     {"id":{"name":"sPlay","path":"sprites/sPlay/sPlay.yy",},},
     {"id":{"name":"general_functions","path":"scripts/general_functions/general_functions.yy",},},

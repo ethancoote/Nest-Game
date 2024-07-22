@@ -23,6 +23,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"sPlayHover","order":6,"path":"sprites/sPlayHover/sPlayHover.yy",},
+    {"name":"menuSong1","order":13,"path":"sounds/menuSong1/menuSong1.yy",},
     {"name":"sFire","order":6,"path":"sprites/sFire/sFire.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sLoseMenu","order":1,"path":"sprites/sLoseMenu/sLoseMenu.yy",},
@@ -49,6 +50,7 @@
     {"name":"pop2","order":1,"path":"sounds/pop2/pop2.yy",},
     {"name":"oHealthPlayer","order":10,"path":"objects/oHealthPlayer/oHealthPlayer.yy",},
     {"name":"sMainMenu","order":2,"path":"sprites/sMainMenu/sMainMenu.yy",},
+    {"name":"fightSong1","order":15,"path":"sounds/fightSong1/fightSong1.yy",},
     {"name":"oSpawner1","order":7,"path":"objects/oSpawner1/oSpawner1.yy",},
     {"name":"sNextWave","order":4,"path":"sprites/sNextWave/sNextWave.yy",},
     {"name":"oLoseMenu","order":3,"path":"objects/oLoseMenu/oLoseMenu.yy",},
@@ -66,6 +68,7 @@
     {"name":"lose1","order":10,"path":"sounds/lose1/lose1.yy",},
     {"name":"walk1","order":11,"path":"sounds/walk1/walk1.yy",},
     {"name":"win2","order":9,"path":"sounds/win2/win2.yy",},
+    {"name":"menuSong2","order":14,"path":"sounds/menuSong2/menuSong2.yy",},
     {"name":"sChicken","order":5,"path":"sprites/sChicken/sChicken.yy",},
     {"name":"sPlay","order":5,"path":"sprites/sPlay/sPlay.yy",},
     {"name":"sS","order":2,"path":"sprites/sS/sS.yy",},
