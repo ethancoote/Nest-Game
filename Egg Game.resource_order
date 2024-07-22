@@ -36,6 +36,7 @@
     {"name":"grunt1","order":7,"path":"sounds/grunt1/grunt1.yy",},
     {"name":"sLogs","order":25,"path":"sprites/sLogs/sLogs.yy",},
     {"name":"sChar1Fall","order":24,"path":"sprites/sChar1Fall/sChar1Fall.yy",},
+    {"name":"fnWave","order":1,"path":"fonts/fnWave/fnWave.yy",},
     {"name":"oMainMenuButton","order":4,"path":"objects/oMainMenuButton/oMainMenuButton.yy",},
     {"name":"sE","order":1,"path":"sprites/sE/sE.yy",},
     {"name":"sChar2","order":22,"path":"sprites/sChar2/sChar2.yy",},
