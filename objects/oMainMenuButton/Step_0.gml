@@ -5,11 +5,12 @@ if oLoseMenu.appear == true || oWinMenu.appear == true {
 	var _inst;
 	_inst = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), id);
 
-	if _inst == true {
+	if _inst != noone {
 		sprite_index = sMainMenuHover;
 		if mouse_check_button_pressed(mb_left) {
 			audio_play_sound(pop2, 0, false, 1);
-			room_goto(0);
+			audio_stop_sound(fightSong1);
+			room_goto(1);
 		}
 	} else {
 		sprite_index = sMainMenu;
@@ -19,7 +20,3 @@ if oLoseMenu.appear == true || oWinMenu.appear == true {
 		y -= 20;
 	}
 }
-
-
-
-

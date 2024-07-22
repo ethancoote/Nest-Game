@@ -1,3 +1,5 @@
+var _inst;
+_inst = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), id);
 if oControl1.play == false && oControl1.win == false {
 	if menu_song == false {
 		audio_play_sound(menuSong2, 99, true);
@@ -7,10 +9,8 @@ if oControl1.play == false && oControl1.win == false {
 	if y > 500 {
 		y -= 20;
 	}
-	var _inst;
-	_inst = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), id);
-
-	if _inst == true {
+	
+	if _inst != noone {
 		sprite_index = sNextWaveHover;
 		if mouse_check_button_pressed(mb_left) {
 			oControl1.wave += 1;
@@ -23,6 +23,7 @@ if oControl1.play == false && oControl1.win == false {
 		}
 	} else {
 		sprite_index = sNextWave;
+		
 	}
 } else {
 	if y < 1000 {

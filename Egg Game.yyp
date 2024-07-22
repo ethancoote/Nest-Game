@@ -48,6 +48,7 @@
     {"id":{"name":"sLoseMenu","path":"sprites/sLoseMenu/sLoseMenu.yy",},},
     {"id":{"name":"oHealthEnemy","path":"objects/oHealthEnemy/oHealthEnemy.yy",},},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},},
+    {"id":{"name":"oResolution","path":"objects/oResolution/oResolution.yy",},},
     {"id":{"name":"enemyDeath1","path":"sounds/enemyDeath1/enemyDeath1.yy",},},
     {"id":{"name":"sChar1Jump","path":"sprites/sChar1Jump/sChar1Jump.yy",},},
     {"id":{"name":"oEnemyUI","path":"objects/oEnemyUI/oEnemyUI.yy",},},
@@ -80,6 +81,7 @@
     {"id":{"name":"Terrain__32x32_","path":"sprites/Terrain__32x32_/Terrain__32x32_.yy",},},
     {"id":{"name":"sSparks","path":"sprites/sSparks/sSparks.yy",},},
     {"id":{"name":"oLogs","path":"objects/oLogs/oLogs.yy",},},
+    {"id":{"name":"RenderRoom","path":"rooms/RenderRoom/RenderRoom.yy",},},
     {"id":{"name":"pop3","path":"sounds/pop3/pop3.yy",},},
     {"id":{"name":"oControl1","path":"objects/oControl1/oControl1.yy",},},
     {"id":{"name":"sChickenHurt","path":"sprites/sChickenHurt/sChickenHurt.yy",},},
@@ -127,6 +129,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"RenderRoom","path":"rooms/RenderRoom/RenderRoom.yy",},},
     {"roomId":{"name":"StartRoom","path":"rooms/StartRoom/StartRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

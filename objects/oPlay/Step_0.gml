@@ -1,5 +1,5 @@
 var _inst;
-_inst = instance_position(mouse_x, mouse_y, id);
+_inst = position_meeting(mouse_x, mouse_y, id);
 
 if _inst != noone {
 	sprite_index = sPlayHover;
