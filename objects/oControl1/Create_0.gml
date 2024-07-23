@@ -16,6 +16,7 @@ wave_alpha = 0;
 wave_show = false;
 round_start = false;
 protect_alpha = 0;
+upgrades_open = true;
 
 
 // game state
